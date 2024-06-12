@@ -1,0 +1,4 @@
+[console_scripts]
+mros_test = teleop_bot.publisher:main
+pub = teleop_bot.pub:main
+sub = teleop_bot.sub:main
