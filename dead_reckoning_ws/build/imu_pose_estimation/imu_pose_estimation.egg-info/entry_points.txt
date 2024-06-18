@@ -1,0 +1,4 @@
+[console_scripts]
+estimator = imu_pose_estimation.dist_vel_estimator:main
+pub = imu_pose_estimation.pub:main
+sub = imu_pose_estimation.sub:main
