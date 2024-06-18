@@ -281,13 +281,13 @@ class BMX160:
         magny *= self.BMX160_MAGN_UT_LSB
         magnz *= self.BMX160_MAGN_UT_LSB
         
-        gyrox *= self.gyroRange
-        gyroy *= self.gyroRange
-        gyroz *= self.gyroRange
+        gyrox *= self.gyroRange * 9.8
+        gyroy *= self.gyroRange * 9.8
+        gyroz *= self.gyroRange * 9.8
         
-        accelx *= self.accelRange * 9.8
-        accely *= self.accelRange * 9.8
-        accelz *= self.accelRange * 9.8
+        accelx *= self.accelRange 
+        accely *= self.accelRange 
+        accelz *= self.accelRange 
         out_put = []
         out_put.append(magnx)
         out_put.append(magny)

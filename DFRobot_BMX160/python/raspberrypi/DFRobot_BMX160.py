@@ -210,7 +210,7 @@ class BMX160:
         elif bits == 4:
             self.gyroRange = self._BMX160_GYRO_SENSITIVITY_2000DPS
         else:
-            self.gyroRange = self._BMX160_GYRO_SENSITIVITY_250DPS
+            self.gyroRange = self._BMX160_GYRO_SENSITIVITY_125DPS
 
     def set_accel_range(self, bits):
         '''!
@@ -230,7 +230,7 @@ class BMX160:
         elif bits == 3:
             self.accelRange = self._BMX160_ACCEL_MG_LSB_16G
         else:
-            self.accelRange = self._BMX160_ACCEL_MG_LSB_2G
+            self.accelRange = self._BMX160_ACCEL_MG_LSB_8G
 
     def get_all_data(self):
         '''!

@@ -1,0 +1,50 @@
+Visualization Manager
+{
+  Class: "rviz/VisualizationManager"
+  Name: "Visualization Manager"
+  Displays: [
+    {
+      Class: "rviz/Grid"
+      Name: "Grid"
+      Value: true
+      Position: 0
+      Alpha: 0.5
+      Cell Count: 100
+      Cell Size: 1
+      Color: 160;160;160
+    }
+    {
+      Class: "rviz/TF"
+      Name: "TF"
+      Value: true
+      Position: 1
+      Show Axes: true
+      Show Names: true
+      Show Names in RViz Fixed Frame: false
+      Frame Rate: 30
+      Update Interval: 0.01
+    }
+    {
+      Class: "rviz/Imu"
+      Name: "IMU"
+      Value: true
+      Position: 2
+      Topic: "/imu/data"
+      Unreliable: false
+      Color: 255;255;255
+      Acceleration Arrow Scale: 1
+      Acceleration Color: 0;255;0
+      Acceleration Line Width: 0.1
+      Angular Velocity Arrow Scale: 1
+      Angular Velocity Color: 255;0;0
+      Angular Velocity Line Width: 0.1
+      Axes Length: 1
+      Axes Radius: 0.1
+      Show Axes: true
+      Show Acceleration: true
+      Show Angular Velocity: true
+    }
+  ]
+  Fixed Frame: "base_link"
+  Frame Rate: 30
+}

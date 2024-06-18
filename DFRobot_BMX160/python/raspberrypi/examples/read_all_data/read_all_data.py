@@ -30,6 +30,7 @@ def main():
         print("gyro  x: {0:.2f} g, y: {1:.2f} g, z: {2:.2f} g".format(data[3],data[4],data[5]))
         print("accel x: {0:.2f} m/s^2, y: {1:.2f} m/s^2, z: {2:.2f} m/s^2".format(data[6],data[7],data[8]))
         print(" ")
+        print(data[3])
 
 if __name__ == "__main__":
     main()

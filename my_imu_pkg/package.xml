@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>my_imu_pkg</name>
+  <version>0.0.1</version>
+  <description>IMU data processing package</description>
+
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
