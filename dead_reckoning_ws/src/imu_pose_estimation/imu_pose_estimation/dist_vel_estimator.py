@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
 import time
@@ -8,7 +9,9 @@ from std_msgs.msg import Int32MultiArray
 from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSDurabilityPolicy, QoSHistoryPolicy
 from tf_transformations import euler_from_quaternion
 from scipy.spatial.transform import Rotation as R
-from geometry_msgs.msg import Pose2D
+from geometry_msgs.msg import Pose2D , TransformStamped
+import tf2_ros
+
 
 IMU_ACC_OFFSET = 0.0
 i=0
@@ -25,6 +28,7 @@ class PoseEstimator(Node):
             history=QoSHistoryPolicy.KEEP_LAST,
             depth=10))
         self.pub = self.create_publisher(Pose2D, '/odom', 10)
+        self.br = tf2_ros.TransformBroadcaster(self)
         self.Pose = Pose2D()
         self.bias_list=np.zeros(50)
         self.pwm=0.0
@@ -103,6 +107,23 @@ class PoseEstimator(Node):
         # self.get_logger().info(f'Distance: {self.x[0, 0]}, Speed: {self.x[1, 0]}, Acc: {self.acc_x}, yaw: {round(self.yaw, 2)}')
         self.get_logger().info(f'X: {self.Pose.x}, Y: {self.Pose.y}, yaw: {round(self.yaw, 2)}')
         self.pub.publish(self.Pose)
+        self.publish_transform()
+
+
+    def publish_transform(self):                          # Function to publish TF of 'odom' w.r.t to 'base_link' 
+        t = TransformStamped()
+        t.header.stamp = self.get_clock().now().to_msg()
+        t.header.frame_id = 'odom'
+        t.child_frame_id = 'base_link'
+        t.transform.translation.x = self.Pose.x
+        t.transform.translation.y = self.Pose.y
+        t.transform.translation.z = 0.0
+        q = R.from_euler('z', self.Pose.theta).as_quat()
+        t.transform.rotation.x = q[0]
+        t.transform.rotation.y = q[1]
+        t.transform.rotation.z = q[2]
+        t.transform.rotation.w = q[3]
+        self.br.sendTransform(t)
         
         # self.get_logger().info(f'Distance: {self.x[0, 0]}, Speed: {self.x[1, 0]}, Acc: {self.acc_x}, yaw: {self.angular_vel.z}')
 
