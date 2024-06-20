@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "custom_msgs/msg/Goal",
+      "fields": [
+        {
+          "name": "x_coordinates",
+          "type": {
+            "type_id": 155,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "y_coordinates",
+          "type": {
+            "type_id": 155,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "custom_msgs/msg/Goal",
+      "hash_string": "RIHS01_3637694d453c373d738f03747efb1d9e7133cfb795dce0b5e14d5a3f965a96b7"
+    }
+  ]
+}

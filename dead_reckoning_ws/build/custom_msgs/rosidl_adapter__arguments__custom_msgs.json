@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/home/rohan/eysip_2024/dead_reckoning_ws/src/custom_msgs:msg/Goal.msg"
+  ]
+}

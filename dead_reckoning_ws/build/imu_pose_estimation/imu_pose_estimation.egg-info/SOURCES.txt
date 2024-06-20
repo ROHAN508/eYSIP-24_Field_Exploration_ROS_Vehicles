@@ -12,6 +12,7 @@ imu_pose_estimation/__init__.py
 imu_pose_estimation/dist_vel_estimator.py
 imu_pose_estimation/iye.py
 imu_pose_estimation/lol.py
+imu_pose_estimation/ori_odom.py
 imu_pose_estimation/pub.py
 imu_pose_estimation/sub.py
 resource/imu_pose_estimation

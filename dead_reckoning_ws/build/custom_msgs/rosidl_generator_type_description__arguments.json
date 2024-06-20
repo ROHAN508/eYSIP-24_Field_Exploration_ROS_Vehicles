@@ -1,0 +1,7 @@
+{
+  "package_name": "custom_msgs",
+  "output_dir": "/home/rohan/eysip_2024/dead_reckoning_ws/build/custom_msgs/rosidl_generator_type_description/custom_msgs",
+  "idl_tuples": [
+    "/home/rohan/eysip_2024/dead_reckoning_ws/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Goal.idl"
+  ]
+}
