@@ -34,14 +34,14 @@ def main(args=None):
         else:
             print('invalid input')
         # Calculate the coordinates of a regular hexagon with side length 1 meter
-    side_length = 1.5
+    side_length = 2.5
 
 # Calculate the angles for the vertices
     angles = np.linspace(0, 2 * np.pi, sides, endpoint=False)
 
 # Calculate the x and y coordinates
-    x_coordinates = side_length * np.cos(angles)
-    y_coordinates = side_length * np.sin(angles)
+    y_coordinates = side_length * np.cos(angles)
+    x_coordinates = side_length * np.sin(angles)
 
 # Append the origin and close the loop by adding the first point again at the end
     first_x = x_coordinates[0]
@@ -51,7 +51,7 @@ def main(args=None):
 
     for i in range(len(x_coordinates)):
         x_coordinates[i] = x_coordinates[i] - first_x
-        y_coordinates[i] = y_coordinates[i] - first_y
+        y_coordinates[i] = -1*(y_coordinates[i] - first_y)
 
     print("x_coordinates:", x_coordinates)
     print("y_coordinates:", y_coordinates)
@@ -72,7 +72,7 @@ def main(args=None):
     plt.show()
     Goal1 = Goal()
     Goal1.x_coordinates = x_coordinates
-    Goal1.y_coordinates = x_coordinates
+    Goal1.y_coordinates = y_coordinates
     # Goal1.x_coordinates = np.array([0,3])
     # Goal1.y_coordinates = np.array([0,0])
     goal = GoalNode()

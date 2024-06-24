@@ -1,6 +1,4 @@
 from setuptools import find_packages, setup
-import os
-from glob import glob
 
 package_name = 'imu_pose_estimation'
 
@@ -12,8 +10,6 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
-        (os.path.join('share', package_name, 'description'), glob('urdf/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -24,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': ['estimator = imu_pose_estimation.dist_vel_estimator:main',
+                            'yaw_estimator = imu_pose_estimation.yaw_estimator:main',
+                            'madgwick = imu_pose_estimation.madgwick_filter:main',
                             'pub = imu_pose_estimation.pub:main',
                             'sub = imu_pose_estimation.sub:main'
         ],
