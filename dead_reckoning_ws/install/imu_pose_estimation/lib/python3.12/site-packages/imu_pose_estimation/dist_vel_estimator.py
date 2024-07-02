@@ -11,7 +11,9 @@ from scipy.spatial.transform import Rotation as R
 from geometry_msgs.msg import Pose2D
 
 IMU_ACC_OFFSET = 0.0
+IMU_YAW_OFFSET =0.0
 i=0
+j=0
 
 
 
@@ -27,10 +29,11 @@ class PoseEstimator(Node):
         self.pub = self.create_publisher(Pose2D, '/odom', 10)
         self.Pose = Pose2D()
         self.bias_list=np.zeros(50)
+        self.bias_yaw_list=np.zeros(50)
         self.pwm=0.0
         self.bias=0.0
-        self.pwm_val = np.array([-40, -35 , -30, -25 , -20 , 0 , 20, 25, 30, 35, 40])
-        self.speed = np.array([-0.945 , - 0.79 , -0.656, -0.508, -0.35, 0, 0.33, 0.529, 0.7165, 0.8675,1.028 ])
+        self.pwm_val = np.array([-30, -25 , -20 , 0 , 20, 25, 30, 35, 40])
+        self.speed = np.array([-0.707, -0.545, -0.36 ,0, 0.40, 0.57, 0.74, 0.89,1.06 ])
         self.x = np.array([[0.0], [0.0]])
         self.P = np.array([[1.0, 0.0], [0.0, 1.0]])
         self.Q = np.array([[0.001, 0.0], [0.0, 0.003]])
@@ -55,55 +58,66 @@ class PoseEstimator(Node):
 
 
     def callBack(self, msg: Imu):
-        global i, IMU_ACC_OFFSET
+        global i, j, IMU_ACC_OFFSET, IMU_YAW_OFFSET
         self.linear_acc = msg.linear_acceleration 
         # self.quaternion = (msg.orientation.x,msg.orientation.y,msg.orientation.z,msg.orientation.w)
         self.angular_vel = msg.angular_velocity
         # self.euler = list(R.from_quat(self.quaternion).as_euler('xyz'))
         # self.roll, self.pitch, self.yaw = euler_from_quaternion(self.quaternion)
+        # self.get_logger().info(f'yaw : {self.yaw}')
         self.current_time=time.time()
         self.dt=self.current_time-self.last_time
         self.last_time=time.time()
-        if self.pwm_servo==1800:
-            pass
+        # if self.pwm_servo==1800:
+        #     pass
+        # else:
+        #     self.yaw = self.yaw + self.angular_vel.z*self.dt
+        if j < 50:
+            self.bias_yaw_list[j] = msg.angular_velocity.z
+            self.get_logger().info(f'bias: {msg.angular_velocity.z}')
+            j=j+1
+            if  j == 49:
+                IMU_YAW_OFFSET = np.sum(self.bias_yaw_list)/50
+                self.get_logger().info(f'IMU bias calculated: {IMU_YAW_OFFSET}')
         else:
-            self.yaw = self.yaw + self.angular_vel.z*self.dt
+            # self.yaw_rate = msg.angular_velocity.z - self.IMU_YAW_OFFSET
 
-        # self.yaw = self.yaw + self.angular_vel.z*self.dt
+            self.yaw = self.yaw + (self.angular_vel.z-IMU_YAW_OFFSET)*self.dt
 
-        if self.pwm_throttle==0.0:
-            self.x[1, 0] = 0.0
-            self.acc_x=0.0
-            if i< 50:
-                self.bias_list[i]= self.linear_acc.x
-                IMU_ACC_OFFSET=np.sum(self.bias_list)/50
-                i=i+1
+            if self.pwm_throttle==0.0:
+                self.x[1, 0] = 0.0
+                self.acc_x=0.0
+                if i< 50:
+                    self.bias_list[i]= self.linear_acc.x
+                    IMU_ACC_OFFSET=np.sum(self.bias_list)/50
+                    i=i+1
+                else:
+                    i=0
+
             else:
-                i=0
-
-        else:
-            self.acc_x=self.linear_acc._x-IMU_ACC_OFFSET
-            self.F = np.array([[1, self.dt], [0, 1]])
-            self.B = np.array([[0.5 * self.dt**2], [self.dt]])
-            self.u = np.array([[self.acc_x]])
-            self.x_pred = self.F @ self.x + self.B @ self.u
-            self.P_pred = self.F @ self.P @ self.F.T + self.Q
-            self.z = np.array([[self.x[0, 0] + np.interp(self.pwm_throttle,self.pwm_val,self.speed)*self.dt], [np.interp(self.pwm_throttle,self.pwm_val,self.speed)]])
-            self.y = self.z - (self.H @ self.x_pred)
-            self.S = self.H @ self.P_pred @ self.H.T + self.R  
-            self.K = self.P_pred @ self.H.T @ np.linalg.inv(self.S)
-            self.x = self.x_pred + self.K @ self.y 
-            self.P = (self.I - self.K @ self.H) @ self.P_pred
-            self.vector_length = self.x[0,0] - self.prev_dist
-            self.prev_dist = self.x[0,0]
-            self.Pose.x = self.Pose.x + self.vector_length*math.cos(self.yaw)
-            self.Pose.y = self.Pose.y + self.vector_length*math.sin(self.yaw)
-            self.Pose.theta =self.yaw
+                self.acc_x=self.linear_acc._x-IMU_ACC_OFFSET
+                self.F = np.array([[1, self.dt], [0, 1]])
+                self.B = np.array([[0.5 * self.dt**2], [self.dt]])
+                self.u = np.array([[self.acc_x]])
+                self.x_pred = self.F @ self.x + self.B @ self.u
+                self.P_pred = self.F @ self.P @ self.F.T + self.Q
+                self.z = np.array([[self.x[0, 0] + np.interp(self.pwm_throttle,self.pwm_val,self.speed)*self.dt], [np.interp(self.pwm_throttle,self.pwm_val,self.speed)]])
+                self.y = self.z - (self.H @ self.x_pred)
+                self.S = self.H @ self.P_pred @ self.H.T + self.R  
+                self.K = self.P_pred @ self.H.T @ np.linalg.inv(self.S)
+                self.x = self.x_pred + self.K @ self.y 
+                self.P = (self.I - self.K @ self.H) @ self.P_pred
+                self.vector_length = self.x[0,0] - self.prev_dist
+                self.prev_dist = self.x[0,0]
+                self.Pose.x = self.Pose.x + self.vector_length*math.cos(self.yaw)
+                self.Pose.y = self.Pose.y + self.vector_length*math.sin(self.yaw)
+                self.Pose.theta =math.atan2(math.sin(self.yaw), math.cos(self.yaw))
 
         # self.get_logger().info(f'Distance: {self.x[0, 0]}, Speed: {self.x[1, 0]}, Acc: {self.acc_x}, yaw: {round(self.yaw, 2)}')
-        self.get_logger().info(f'X: {self.Pose.x}, Y: {self.Pose.y}, yaw: {round(self.yaw, 2)}')
-        self.pub.publish(self.Pose)
-        
+            self.get_logger().info(f'X: {self.Pose.x}, Y: {self.Pose.y}, yaw: {round(self.Pose.theta, 2)}')
+            self.get_logger().info(f'acc off: {IMU_ACC_OFFSET}')
+            self.pub.publish(self.Pose)
+            # self.get_logger().info(f' yaw: {round(self.yaw, 2)}')
         # self.get_logger().info(f'Distance: {self.x[0, 0]}, Speed: {self.x[1, 0]}, Acc: {self.acc_x}, yaw: {self.angular_vel.z}')
 
         # self.get_logger().info(f'P {self.P}, T: {self.dt}, Z: {self.z}')

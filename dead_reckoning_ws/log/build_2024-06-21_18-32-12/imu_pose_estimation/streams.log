@@ -1,0 +1,23 @@
+[1.066s] Invoking command in '/home/rohan/eysip_2024/dead_reckoning_ws/src/imu_pose_estimation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/prefix_override:/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_pose_estimation build --build-base /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build install --record /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log --single-version-externally-managed install_data
+[1.315s] running egg_info
+[1.335s] writing ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/PKG-INFO
+[1.335s] writing dependency_links to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/dependency_links.txt
+[1.336s] writing entry points to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/entry_points.txt
+[1.336s] writing requirements to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/requires.txt
+[1.336s] writing top-level names to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/top_level.txt
+[1.374s] reading manifest file '../../build/imu_pose_estimation/imu_pose_estimation.egg-info/SOURCES.txt'
+[1.375s] writing manifest file '../../build/imu_pose_estimation/imu_pose_estimation.egg-info/SOURCES.txt'
+[1.375s] running build
+[1.376s] running build_py
+[1.376s] running install
+[1.382s] running install_lib
+[1.403s] running install_data
+[1.403s] running install_egg_info
+[1.424s] removing '/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation-0.0.0-py3.12.egg-info' (and everything under it)
+[1.424s] Copying ../../build/imu_pose_estimation/imu_pose_estimation.egg-info to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation-0.0.0-py3.12.egg-info
+[1.425s] running install_scripts
+[1.557s] Installing estimator script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.557s] Installing pub script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.557s] Installing sub script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.557s] writing list of installed files to '/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log'
+[1.578s] Invoked command in '/home/rohan/eysip_2024/dead_reckoning_ws/src/imu_pose_estimation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/prefix_override:/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_pose_estimation build --build-base /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build install --record /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log --single-version-externally-managed install_data

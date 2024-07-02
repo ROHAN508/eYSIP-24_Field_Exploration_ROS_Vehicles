@@ -1,0 +1,27 @@
+[1.356s] Invoking command in '/home/rohan/eysip_2024/dead_reckoning_ws/src/imu_pose_estimation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/prefix_override:/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_pose_estimation build --build-base /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build install --record /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log --single-version-externally-managed install_data
+[1.611s] running egg_info
+[1.629s] writing ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/PKG-INFO
+[1.630s] writing dependency_links to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/dependency_links.txt
+[1.630s] writing entry points to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/entry_points.txt
+[1.630s] writing requirements to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/requires.txt
+[1.630s] writing top-level names to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/top_level.txt
+[1.671s] reading manifest file '../../build/imu_pose_estimation/imu_pose_estimation.egg-info/SOURCES.txt'
+[1.672s] writing manifest file '../../build/imu_pose_estimation/imu_pose_estimation.egg-info/SOURCES.txt'
+[1.672s] running build
+[1.672s] running build_py
+[1.672s] copying imu_pose_estimation/dist_vel_estimator.py -> /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build/lib/imu_pose_estimation
+[1.672s] running install
+[1.678s] running install_lib
+[1.698s] copying /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build/lib/imu_pose_estimation/dist_vel_estimator.py -> /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation
+[1.698s] byte-compiling /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation/dist_vel_estimator.py to dist_vel_estimator.cpython-312.pyc
+[1.700s] running install_data
+[1.700s] running install_egg_info
+[1.720s] removing '/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation-0.0.0-py3.12.egg-info' (and everything under it)
+[1.720s] Copying ../../build/imu_pose_estimation/imu_pose_estimation.egg-info to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation-0.0.0-py3.12.egg-info
+[1.721s] running install_scripts
+[1.847s] Installing estimator script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.847s] Installing madgwick script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.847s] Installing pub script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.847s] Installing sub script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.847s] writing list of installed files to '/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log'
+[1.901s] Invoked command in '/home/rohan/eysip_2024/dead_reckoning_ws/src/imu_pose_estimation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/prefix_override:/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_pose_estimation build --build-base /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build install --record /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log --single-version-externally-managed install_data

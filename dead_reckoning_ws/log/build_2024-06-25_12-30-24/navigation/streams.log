@@ -1,0 +1,25 @@
+[2.461s] Invoking command in '/home/rohan/eysip_2024/dead_reckoning_ws/src/navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/prefix_override:/home/rohan/eysip_2024/dead_reckoning_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/build install --record /home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/install.log --single-version-externally-managed install_data
+[2.953s] running egg_info
+[2.990s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[2.990s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[2.991s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[2.991s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[2.992s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[3.060s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.061s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[3.061s] running build
+[3.062s] running build_py
+[3.062s] copying navigation/GoalNode.py -> /home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/build/lib/navigation
+[3.062s] running install
+[3.073s] running install_lib
+[3.114s] copying /home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/build/lib/navigation/GoalNode.py -> /home/rohan/eysip_2024/dead_reckoning_ws/install/navigation/lib/python3.12/site-packages/navigation
+[3.115s] byte-compiling /home/rohan/eysip_2024/dead_reckoning_ws/install/navigation/lib/python3.12/site-packages/navigation/GoalNode.py to GoalNode.cpython-312.pyc
+[3.117s] running install_data
+[3.118s] running install_egg_info
+[3.163s] removing '/home/rohan/eysip_2024/dead_reckoning_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[3.163s] Copying ../../build/navigation/navigation.egg-info to /home/rohan/eysip_2024/dead_reckoning_ws/install/navigation/lib/python3.12/site-packages/navigation-0.0.0-py3.12.egg-info
+[3.165s] running install_scripts
+[3.407s] Installing goalNode script to /home/rohan/eysip_2024/dead_reckoning_ws/install/navigation/lib/navigation
+[3.408s] Installing gotoGoal script to /home/rohan/eysip_2024/dead_reckoning_ws/install/navigation/lib/navigation
+[3.408s] writing list of installed files to '/home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/install.log'
+[3.452s] Invoked command in '/home/rohan/eysip_2024/dead_reckoning_ws/src/navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/prefix_override:/home/rohan/eysip_2024/dead_reckoning_ws/install/navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/build install --record /home/rohan/eysip_2024/dead_reckoning_ws/build/navigation/install.log --single-version-externally-managed install_data

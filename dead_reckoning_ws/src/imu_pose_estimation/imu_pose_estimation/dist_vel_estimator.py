@@ -32,8 +32,8 @@ class PoseEstimator(Node):
         self.bias_yaw_list=np.zeros(50)
         self.pwm=0.0
         self.bias=0.0
-        self.pwm_val = np.array([-40, -35 , -30, -25 , -20 , 0 , 20, 25, 30, 35, 40])
-        self.speed = np.array([-0.945 , - 0.79 , -0.656, -0.508, -0.35, 0, 0.33, 0.529, 0.7165, 0.8675,1.028 ])
+        self.pwm_val = np.array([-30, -25 , -20 , 0 , 20, 25, 30, 35, 40])
+        self.speed = np.array([-0.707, -0.545, -0.36 ,0, 0.40, 0.57, 0.74, 0.89,1.06 ])
         self.x = np.array([[0.0], [0.0]])
         self.P = np.array([[1.0, 0.0], [0.0, 1.0]])
         self.Q = np.array([[0.001, 0.0], [0.0, 0.003]])
@@ -115,6 +115,7 @@ class PoseEstimator(Node):
 
         # self.get_logger().info(f'Distance: {self.x[0, 0]}, Speed: {self.x[1, 0]}, Acc: {self.acc_x}, yaw: {round(self.yaw, 2)}')
             self.get_logger().info(f'X: {self.Pose.x}, Y: {self.Pose.y}, yaw: {round(self.Pose.theta, 2)}')
+            self.get_logger().info(f'acc off: {IMU_ACC_OFFSET}')
             self.pub.publish(self.Pose)
             # self.get_logger().info(f' yaw: {round(self.yaw, 2)}')
         # self.get_logger().info(f'Distance: {self.x[0, 0]}, Speed: {self.x[1, 0]}, Acc: {self.acc_x}, yaw: {self.angular_vel.z}')

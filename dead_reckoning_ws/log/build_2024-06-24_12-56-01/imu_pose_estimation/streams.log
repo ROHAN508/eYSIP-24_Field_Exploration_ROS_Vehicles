@@ -1,0 +1,28 @@
+[1.061s] Invoking command in '/home/rohan/eysip_2024/dead_reckoning_ws/src/imu_pose_estimation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/prefix_override:/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_pose_estimation build --build-base /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build install --record /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log --single-version-externally-managed install_data
+[1.311s] running egg_info
+[1.330s] writing ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/PKG-INFO
+[1.330s] writing dependency_links to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/dependency_links.txt
+[1.330s] writing entry points to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/entry_points.txt
+[1.330s] writing requirements to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/requires.txt
+[1.331s] writing top-level names to ../../build/imu_pose_estimation/imu_pose_estimation.egg-info/top_level.txt
+[1.368s] reading manifest file '../../build/imu_pose_estimation/imu_pose_estimation.egg-info/SOURCES.txt'
+[1.369s] writing manifest file '../../build/imu_pose_estimation/imu_pose_estimation.egg-info/SOURCES.txt'
+[1.369s] running build
+[1.369s] running build_py
+[1.369s] copying imu_pose_estimation/dist_vel_estimator.py -> /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build/lib/imu_pose_estimation
+[1.370s] running install
+[1.375s] running install_lib
+[1.395s] copying /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build/lib/imu_pose_estimation/dist_vel_estimator.py -> /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation
+[1.396s] byte-compiling /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation/dist_vel_estimator.py to dist_vel_estimator.cpython-312.pyc
+[1.398s] running install_data
+[1.398s] running install_egg_info
+[1.418s] removing '/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation-0.0.0-py3.12.egg-info' (and everything under it)
+[1.418s] Copying ../../build/imu_pose_estimation/imu_pose_estimation.egg-info to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages/imu_pose_estimation-0.0.0-py3.12.egg-info
+[1.419s] running install_scripts
+[1.554s] Installing estimator script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.554s] Installing madgwick script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.555s] Installing pub script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.555s] Installing sub script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.555s] Installing yaw_estimator script to /home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/imu_pose_estimation
+[1.555s] writing list of installed files to '/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log'
+[1.581s] Invoked command in '/home/rohan/eysip_2024/dead_reckoning_ws/src/imu_pose_estimation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/prefix_override:/home/rohan/eysip_2024/dead_reckoning_ws/install/imu_pose_estimation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imu_pose_estimation build --build-base /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/build install --record /home/rohan/eysip_2024/dead_reckoning_ws/build/imu_pose_estimation/install.log --single-version-externally-managed install_data

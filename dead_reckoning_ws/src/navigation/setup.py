@@ -20,7 +20,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': ['goalNode = navigation.GoalNode:main',
-                            'gotoGoal = navigation.go_to_goal:main'
+                            'gotoGoal = navigation.go_to_goal:main',
+                            'pure_pursuit = navigation.pure_pursuit:main',
+                            'vicon = navigation.vicon_data_compare:main'
+                            
         ],
     },
 )
