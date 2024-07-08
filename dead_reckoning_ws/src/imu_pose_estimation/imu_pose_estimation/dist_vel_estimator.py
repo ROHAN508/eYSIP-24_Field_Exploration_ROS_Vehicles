@@ -21,7 +21,7 @@ class PoseEstimator(Node):
     def __init__(self):
         super().__init__('Dead_reckoning_node')
         self.sub_pwm = self.create_subscription(Int32MultiArray, '/pwm_val', self.pwm_callback, 10)
-        self.sub_imu = self.create_subscription(Imu, '/imu/data', self.callBack, qos_profile=QoSProfile(
+        self.sub_imu = self.create_subscription(Imu, '/imu/raw', self.callBack, qos_profile=QoSProfile(
             reliability=QoSReliabilityPolicy.BEST_EFFORT,
             durability=QoSDurabilityPolicy.VOLATILE,
             history=QoSHistoryPolicy.KEEP_LAST,

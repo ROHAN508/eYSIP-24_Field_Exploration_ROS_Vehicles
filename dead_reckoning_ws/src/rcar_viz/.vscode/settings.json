@@ -1,0 +1,34 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/tahsin-khan/ros2_ws/install/imu_pose_estimation/lib/python3.12/site-packages",
+        "/home/tahsin-khan/ros2_ws/install/imu_pkg/lib/python3.12/site-packages",
+        "/home/tahsin-khan/ros2_ws/install/ackerman_teleop/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/test_bond/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/slam_toolbox/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/bondpy/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/smclib/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/dwb_msgs/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/nav_2d_msgs/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/nav2_simple_commander/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/nav2_msgs/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/nav2_common/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/bond/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/tahsin-khan/ros2_ws/install/imu_pose_estimation/lib/python3.12/site-packages",
+        "/home/tahsin-khan/ros2_ws/install/imu_pkg/lib/python3.12/site-packages",
+        "/home/tahsin-khan/ros2_ws/install/ackerman_teleop/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/test_bond/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/slam_toolbox/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/bondpy/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/smclib/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/dwb_msgs/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/nav_2d_msgs/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/nav2_simple_commander/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/nav2_msgs/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/nav2_common/lib/python3.12/site-packages",
+        "/home/tahsin-khan/nav_ws/install/bond/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}
