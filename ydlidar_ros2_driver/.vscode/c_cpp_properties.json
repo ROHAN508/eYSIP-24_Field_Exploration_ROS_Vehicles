@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/tahsin-khan/ros2_ws/install/imu_viz/include/**",
+        "/home/tahsin-khan/ros2_ws/install/imu_tf/include/**",
+        "/home/tahsin-khan/ros2_ws/install/imu_fusion_madgwick/include/**",
+        "/home/tahsin-khan/catkin_ws/install/rtabmap_msgs/include/**",
+        "/home/tahsin-khan/catkin_ws/install/depthai_ros_driver/include/**",
+        "/home/tahsin-khan/catkin_ws/install/depthai_filters/include/**",
+        "/home/tahsin-khan/catkin_ws/install/depthai_bridge/include/**",
+        "/home/tahsin-khan/catkin_ws/install/depthai_ros_msgs/include/**",
+        "/home/tahsin-khan/nav_ws/install/slam_toolbox/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/tahsin-khan/ros2_ws/src/ros2_imu_tools/imu_fusion_madgwick/include/**",
+        "/home/tahsin-khan/ros2_ws/src/ros2_imu_tools/imu_tf/include/**",
+        "/home/tahsin-khan/ros2_ws/src/ros2_imu_tools/imu_viz/include/**",
+        "/home/tahsin-khan/ros2_ws/src/vicon_bridge/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
