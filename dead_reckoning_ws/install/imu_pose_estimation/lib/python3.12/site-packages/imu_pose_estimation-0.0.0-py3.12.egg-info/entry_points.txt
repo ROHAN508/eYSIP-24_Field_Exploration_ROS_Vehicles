@@ -1,6 +1,0 @@
-[console_scripts]
-estimator = imu_pose_estimation.dist_vel_estimator:main
-madgwick = imu_pose_estimation.madgwick_filter:main
-pub = imu_pose_estimation.pub:main
-sub = imu_pose_estimation.sub:main
-yaw_estimator = imu_pose_estimation.yaw_estimator:main
