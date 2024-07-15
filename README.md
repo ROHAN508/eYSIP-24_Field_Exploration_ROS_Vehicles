@@ -31,7 +31,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 - **ROS 2 jazzy jelisco:** Middleware for robot software development.
 - **Raspberry Pi 5:** Onboard computer for processing and communication.
-- **Esp32:** Microcontroller for low-level motor and servo control interfaced using [!ArduinoIDE]( https://www.arduino.cc/en/software)
+- **Esp32:** Microcontroller for low-level motor and servo control interfaced using [ArduinoIDE]( https://www.arduino.cc/en/software)
 - **Nav2:** Navigation stack for ROS 2.
 - **RViz:** Visualization tool for ROS.
 
