@@ -20,7 +20,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 ## Tech Stack
 ![ROS Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ros_logo.svg/85px-Ros_logo.svg.png) 
-![jazzy-small](https://github.com/user-attachments/assets/221016e3-f4f1-4bc7-b64c-08f458c31085)
+<img src="https://github.com/user-attachments/assets/221016e3-f4f1-4bc7-b64c-08f458c31085" alt="Jazzy Logo" width="100" height="100"/>
 ![Arduino Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/85px-Arduino_Logo.svg.png)  ![Raspberry Pi Logo](https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Raspberry_Pi_Logo.svg/50px-Raspberry_Pi_Logo.svg.png)
 
 
