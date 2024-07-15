@@ -65,7 +65,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 ![car](https://github.com/user-attachments/assets/293aae25-fba5-43d2-993a-406b976a6d7d)
 
-**Figure 1:** Control System Design
+**Figure 1:** Prototype Vehicle
 
 ### Key Challenges
 - **Low-level Control:** The primary challenge we faced in low-level control was interfacing a custom servo with five pins for which no pin diagrams or references were available online. Achieving accurate control at this level required extensive experimentation and fine-tuning.
