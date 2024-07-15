@@ -1,11 +1,11 @@
 # Advancing Field Exploration Using ROS-powered Robotic Vehicles - ARMS Lab IIT Bombay , e-Yantra IITB
 
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/your-repo)
-![GitHub contributors](https://img.shields.io/github/contributors/your-username/your-repo)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/your-repo)
-![GitHub issues](https://img.shields.io/github/issues/your-username/your-repo)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/your-username/your-repo)
-![GitHub](https://img.shields.io/github/license/your-username/your-repo)
+![GitHub repo size](https://img.shields.io/github/repo-size/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles)
+![GitHub contributors](https://img.shields.io/github/contributors/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles)
+![GitHub last commit](https://img.shields.io/github/last-commit/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles)
+![GitHub issues](https://img.shields.io/github/issues/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles)
+![GitHub](https://img.shields.io/github/license/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles)
 
 
 ## Table of Contents
