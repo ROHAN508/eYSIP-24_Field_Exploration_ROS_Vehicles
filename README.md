@@ -54,11 +54,11 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 ## Hardware Development
 
-- The motor actuation and steering system features five-pin servo control using PID for precision and DC motor control for throttle.
-- A custom PCB board was developed to ensure optimum power supply to the ESP32, motor drivers, and Raspberry Pi.
-- The mechanical design involved creating laser-cut CAD models using acrylic for a two-layered system, with mounts for all hardware components including a LIDAR.
-- BMX-160 IMU was interfaced and calibrated to publish accurate orientation and acceleration data on a ROS-2 network.
-- Ydlidar Tmini-Pro interfaced with Raspberry Pi5 on ROS2 Jazzy to publish laser data on ``/scan`` topic 
+- The motor actuation and steering system features ``five-pin servo`` control using ``PID`` for precision and DC motor control for throttle.
+- A custom ``PCB`` board was developed to ensure optimum power supply to the ``ESP32``, ``motor drivers``, and ``aspberry Pi``.
+- The mechanical design involved creating laser-cut CAD models using acrylic for a ``two-layered system`` with mounts for all hardware components including a ``LIDAR``.
+- ``BMX-160`` IMU was interfaced and calibrated to publish accurate orientation and acceleration data on a ROS-2 network.
+- ``Ydlidar Tmini-Pro`` interfaced with ``Raspberry Pi5`` on ``ROS2 Jazzy`` to publish laser data on ``/scan`` topic 
 
 **Figure 1:** Control System Design
 
