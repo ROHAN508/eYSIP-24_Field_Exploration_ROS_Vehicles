@@ -63,6 +63,8 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 - ``BMX-160`` IMU was interfaced and calibrated to publish accurate orientation and acceleration data on a ROS-2 network.
 - ``Ydlidar Tmini-Pro`` interfaced with ``Raspberry Pi5`` on ``ROS2 Jazzy`` to publish laser data on ``/scan`` topic 
 
+![car](https://github.com/user-attachments/assets/293aae25-fba5-43d2-993a-406b976a6d7d)
+
 **Figure 1:** Control System Design
 
 ### Key Challenges
