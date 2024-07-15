@@ -19,8 +19,13 @@ Field exploration robots have gained significant attention in recent years due t
 The primary goal of this project is to develop a ROS2-enabled four-wheel-drive vehicle with Ackerman steering capable of waypoint navigation and obstacle avoidance. This vehicle will be equipped with various sensors and an onboard computer to perform Simultaneous Localization and Mapping (SLAM). The project encompasses hardware development, sensor integration, firmware and algorithm development, and extensive testing and validation to ensure the vehicle’s performance and reliability in real-world scenarios.
 
 ## Tech Stack
-(![jazzy-small](https://github.com/user-attachments/assets/5b8e85c6-6c38-4003-ab45-849bd964dad2)
-) ![Raspberry Pi](https://path-to-rpi-logo) ![Esp32](https://path-to-arduino-logo) ![Nav2](https://path-to-nav2-logo) ![RViz](https://path-to-rviz-logo)
+![jazzy-small](https://github.com/user-attachments/assets/5b8e85c6-6c38-4003-ab45-849bd964dad2) ![ros2)logo](https://github.com/user-attachments/assets/4623dc7e-b5c5-47b0-ae90-ab6c73b31882)
+
+![download](https://github.com/user-attachments/assets/52041ab9-41ce-4b15-9e94-4082ec0701a5)
+ ![download (1)](https://github.com/user-attachments/assets/19fea7f8-7aeb-42dd-8817-2f99fdf85281)
+![download (2)](https://github.com/user-attachments/assets/53789864-2494-4ce8-8809-e6ada2975458)
+ ![rvix](https://github.com/user-attachments/assets/1ebece29-c81c-4c18-9eba-ea8d5d56cdaa)
+
 
 - **ROS 2 jazzy jelisco:** Middleware for robot software development.
 - **Raspberry Pi 5:** Onboard computer for processing and communication.
