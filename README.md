@@ -1,13 +1,16 @@
-# Field Exploration Using ROS-powered Robotic vehicles
+# Field Exploration Robot Project
 
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Project Goal](#project-goal)
 3. [Tech Stack](#tech-stack)
-4. [Hardware Development](#hardware-development)
-5. [Localization and Odometry](#localization-and-odometry)
-6. [Motion Planning](#motion-planning)
-7. [SLAM](#slam)
+4. [Setup](#setup)
+    - [Prerequisites](#prerequisites)
+5. [Hardware Development](#hardware-development)
+6. [ROS2-Teleoperation](#ros2-teleoperation)
+7. [Localization and Odometry](#localization-and-odometry)
+8. [Motion Planning](#motion-planning)
+9. [SLAM](#slam)
 
 ## Introduction
 Field exploration robots have gained significant attention in recent years due to their potential applications in various domains such as agriculture, environmental monitoring, and autonomous driving research. These robots are designed to operate autonomously in diverse environments, collecting data and performing tasks that would otherwise be labor-intensive or hazardous for humans. This project focuses on developing a ROS-powered robotic vehicle designed for field exploration. The vehicle is capable of traversing varied ground surfaces autonomously and can be used for tasks such as autonomous field mapping, agricultural plant monitoring, and testing autonomous driving algorithms.
@@ -23,6 +26,20 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 - **Arduino:** Microcontroller for interfacing and control.
 - **Nav2:** Navigation stack for ROS 2.
 - **RViz:** Visualization tool for ROS.
+
+## Setup
+
+### Prerequisites
+- **Operating System:** Ubuntu 20.04 or later
+- **ROS 2 Distribution:** Foxy Fitzroy or later
+- **Hardware:** Raspberry Pi 4 or later, ESP32, BMX-160 IMU, LIDAR
+- **Software:** ROS 2, Arduino IDE, Python 3.x
+
+1. Install ROS 2 on your Ubuntu system by following the [official ROS 2 installation guide](https://docs.ros.org/en/foxy/Installation.html).
+2. Set up your Raspberry Pi and ensure it is connected to your network.
+3. Install necessary libraries and dependencies on your Raspberry Pi.
+4. Flash the ESP32 with the custom firmware using Arduino IDE.
+5. Connect and configure all hardware components as per the provided schematic.
 
 ## Hardware Development
 ### Actuation and Steering System
@@ -41,9 +58,19 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 **Figure 2:** Vicon Odometry vs IMU Odometry
 
+## ROS2-Teleoperation
+### Methodologies
+- Achieved complete low-level control of the car through keyboard commands using ROS2 for communication over a shared network.
+- Implement teleoperation nodes in ROS 2 to send commands to the robot.
+
+**Implementation Steps:**
+1. Install necessary ROS 2 packages for teleoperation.
+2. Write a ROS 2 node to capture keyboard inputs and publish velocity commands.
+3. Configure the robot to subscribe to these velocity commands and actuate the motors accordingly.
+4. Test the teleoperation setup to ensure reliable and responsive control.
+
 ## Localization and Odometry
 ### Methodologies
-- **ROS2-Teleoperation:** Achieved complete low-level control of the car through keyboard commands using ROS2 for communication over a shared network.
 - **Modified Kalman Filter:** Fused car velocity data (calculated from Vicon) with IMU accelerometer readings to get a more accurate state estimate (position and velocity) by reducing drift.
 
 ## Motion Planning
