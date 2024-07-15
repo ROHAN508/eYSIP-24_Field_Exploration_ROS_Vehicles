@@ -22,7 +22,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 ![ROS Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Ros_logo.svg/85px-Ros_logo.svg.png) 
 <img src="https://github.com/user-attachments/assets/221016e3-f4f1-4bc7-b64c-08f458c31085" alt="Jazzy Logo" width="80" height="80"/>
 ![Arduino Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Arduino_Logo.svg/85px-Arduino_Logo.svg.png)  ![Raspberry Pi Logo](https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Raspberry_Pi_Logo.svg/50px-Raspberry_Pi_Logo.svg.png)
-<img src="https://github.com/user-attachments/assets/d05d5f7d-a439-47d1-9e0e-8f6272b9ea4c" alt="Nav2 Logo" width="80" height="80"/>
+<img src="https://github.com/user-attachments/assets/d05d5f7d-a439-47d1-9e0e-8f6272b9ea4c" alt="Nav2 Logo" width="80" height="90"/>
 
 
 
