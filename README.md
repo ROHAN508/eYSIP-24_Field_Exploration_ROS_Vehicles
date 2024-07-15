@@ -21,7 +21,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 ## Tech Stack
 ![ROS](https://path-to-ros-logo) ![Raspberry Pi](https://path-to-rpi-logo) ![Esp32](https://path-to-arduino-logo) ![Nav2](https://path-to-nav2-logo) ![RViz](https://path-to-rviz-logo)
 
-- **ROS 2:** Middleware for robot software development.
+- **ROS 2 jazzy jelisco:** Middleware for robot software development.
 - **Raspberry Pi 5:** Onboard computer for processing and communication.
 - **Esp32:** Microcontroller for low-level motor and servo control .
 - **Nav2:** Navigation stack for ROS 2.
