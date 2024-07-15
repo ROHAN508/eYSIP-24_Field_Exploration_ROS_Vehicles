@@ -1,4 +1,4 @@
-# Field Exploration Robot Project
+# Advancing Field Exploration Using ROS-powered Robotic Vehicles - ARMS Lab IIT Bombay , e-Yantra IITB
 
 ## Table of Contents
 1. [Introduction](#introduction)
