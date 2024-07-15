@@ -42,12 +42,14 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 ## Setup
 
 ### Prerequisites
+
 - **Operating System:** ``Ubuntu 24 LTS`` noble or later
 - **ROS 2 Distribution:** ``Jazzy Jelisco`` 
 - **Hardware:** ``Raspberry Pi5`` ,`` BMX 160 IMU`` , ``Ydlidar Tmini-Pro`` , ``Esp32`` , ``7V Lipo Battery`` 
 - **Software:**  ``Arduino IDE``, ``Python 3.12``
 
 ### Interfacing Hardware 
+
 - **Setting Up Rpi5** : 
 - **BMX 160 IMU** :
 - **Ydlidar Tmini-Pro** : 
