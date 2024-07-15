@@ -19,11 +19,11 @@ Field exploration robots have gained significant attention in recent years due t
 The primary goal of this project is to develop a ROS2-enabled four-wheel-drive vehicle with Ackerman steering capable of waypoint navigation and obstacle avoidance. This vehicle will be equipped with various sensors and an onboard computer to perform Simultaneous Localization and Mapping (SLAM). The project encompasses hardware development, sensor integration, firmware and algorithm development, and extensive testing and validation to ensure the vehicle’s performance and reliability in real-world scenarios.
 
 ## Tech Stack
-![ROS](https://path-to-ros-logo) ![Raspberry Pi](https://path-to-rpi-logo) ![Arduino](https://path-to-arduino-logo) ![Nav2](https://path-to-nav2-logo) ![RViz](https://path-to-rviz-logo)
+![ROS](https://path-to-ros-logo) ![Raspberry Pi](https://path-to-rpi-logo) ![Esp32](https://path-to-arduino-logo) ![Nav2](https://path-to-nav2-logo) ![RViz](https://path-to-rviz-logo)
 
 - **ROS 2:** Middleware for robot software development.
 - **Raspberry Pi:** Onboard computer for processing and communication.
-- **Arduino:** Microcontroller for interfacing and control.
+- **Esp32:** Microcontroller for low-level motor and servo control .
 - **Nav2:** Navigation stack for ROS 2.
 - **RViz:** Visualization tool for ROS.
 
