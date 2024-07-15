@@ -14,7 +14,7 @@
 3. [Tech Stack](#tech-stack)
 4. [Setup](#setup)
     - [Prerequisites](#prerequisites)
-    - [Interfacing Hardware ](#Interfacing_Hardware)
+    - [Interfacing Hardware ](#interfacing-hardware)
 5. [Hardware Development](#hardware-development)
 6. [ROS2-Teleoperation](#ros2-teleoperation)
 7. [Localization and Odometry](#localization-and-odometry)
