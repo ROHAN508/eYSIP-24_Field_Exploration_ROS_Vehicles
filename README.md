@@ -47,10 +47,6 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 - **Hardware:** Raspberry Pi5 , BMX 160 IMU , Ydlidar Tmini-Pro , Esp32 , 7V Lipo Battery 
 - **Software:**  Arduino IDE, Python 3.12
 
-1. Install ROS 2 jazzy on your Ubuntu system by following the [official ROS 2 installation guide](https://docs.ros.org/en/foxy/Installation.html).
-2. Set up your Raspberry Pi 5 with Ubuntu 24LTS and ROS2 Jazzy and ensure it is connected to your network.
-3. Install necessary libraries and dependencies on your Raspberry Pi.
-
 ### Interfacing Hardware 
 1. Setting Up Rpi5 : 
 2. BMX 160 IMU :
