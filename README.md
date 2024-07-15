@@ -48,9 +48,9 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 - **Software:**  Arduino IDE, Python 3.12
 
 ### Interfacing Hardware 
-1. Setting Up Rpi5 : 
-2. BMX 160 IMU :
-3. Ydlidar Tmini-Pro : 
+- **Setting Up Rpi5** : 
+- **BMX 160 IMU** :
+- **Ydlidar Tmini-Pro** : 
 
 ## Hardware Development
 ### Actuation and Steering System
