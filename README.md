@@ -29,9 +29,9 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 
 
-- **[ROS 2 jazzy jelisco](https://docs.ros.org/en/jazzy/Releases/Release-Jazzy-Jalisco.html):** Middleware for robot software development.
-- **Raspberry Pi 5:** Onboard computer for processing and communication.
-- **Esp32:** Microcontroller for low-level motor and servo control interfaced using [ArduinoIDE]( https://www.arduino.cc/en/software)
+- **[ROS2 jazzy](https://docs.ros.org/en/jazzy/Releases/Release-Jazzy-Jalisco.html):** Middleware for robot software development.
+- **[Raspberry Pi 5](https://www.raspberrypi.com/products/raspberry-pi-5/):** Onboard computer for processing and communication.
+- **[Esp32](https://www.espressif.com/en/products/socs/esp32#:~:text=ESP32%20is%20highly%2Dintegrated%20with,Hybrid%20Wi%2DFi%20%26%20Bluetooth%20Chip):** Microcontroller for low-level motor and servo control interfaced using [ArduinoIDE]( https://www.arduino.cc/en/software)
 - **[Nav2](https://docs.nav2.org/getting_started/index.html):** Navigation stack for ROS 2.
 - **[RViz](https://wiki.ros.org/rviz):** Visualization tool for ROS.
 
