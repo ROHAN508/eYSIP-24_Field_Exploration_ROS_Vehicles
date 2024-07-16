@@ -281,7 +281,7 @@ Achieving complete low-level control of the car through keyboard commands using 
    ```
    If u have less computation on Pi run the publisher on the ``remote PC`` using the same command stated above 
 
-Now u can control the car using ``WASD``keys for movement :
+Now u can control the car using ``WASD`` keys for movement :
 - ``W``- Move Forward
 - ``A``- Turn Left
 - ``S`` - Move Backward
