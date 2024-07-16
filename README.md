@@ -267,7 +267,7 @@ Achieving complete low-level control of the car through keyboard commands using 
 
 1. **SSH into Raspberry Pi:**
    ```bash
-   ssh arms@192.168.0.171
+   ssh arms@192.168.0.171    # change the IP address accordingly 
    ```
 2. **Run Subscriber Node**
     ```bash
