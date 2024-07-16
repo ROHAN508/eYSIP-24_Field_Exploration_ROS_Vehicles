@@ -79,18 +79,18 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 ### BMX 160 IMU
 #### Dependencies
- **Install smbus :**
+1. **Install smbus :**
    ```bash
    sudo apt update
    sudo apt install python3-smbus
    ```
 #### IMU node
-**Launch IMU node:**
+2. **Launch IMU node:**
    ```bash
    ros2 launch imu_pkg imu_rviz_robot.launch.py
    ```
 #### Logging Data    
-**Check IMU data:**
+3. **Check IMU data:**
    ```bash
    ros2 topic echo /imu_raw
    ```
@@ -111,7 +111,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 4. **Optional: Run IMU Pose Estimation:**
    To see the Odom data, you can run the following node (optional):
    ```bash
-        ros2 run imu_pose_estimation estimator
+   ros2 run imu_pose_estimation estimator
     ```
     Alternatively, set the fixed frame to ``"base_link"`` in RViz to see laser data on the ``/scan``topic.
 
