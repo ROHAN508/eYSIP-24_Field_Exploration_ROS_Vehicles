@@ -20,10 +20,11 @@
          - [Ydlidar Tmini-Pro](#ydlidar-tmini-pro)
 5. [Key Challenges](#key-challenges)
 6. [Hardware Development](#hardware-development)
-7. [ROS2-Teleoperation](#ros2-teleoperation)
-8. [Localization and Odometry](#localization-and-odometry)
-9. [Motion Planning](#motion-planning)
-10. [SLAM](#slam)
+7. [Control System Design](#control-system-design)
+8. [ROS2-Teleoperation](#ros2-teleoperation)
+9. [Localization and Odometry](#localization-and-odometry)
+10. [Motion Planning](#motion-planning)
+11. [SLAM](#slam)
 
 ## Introduction
 Field exploration robots have gained significant attention in recent years due to their potential applications in various domains such as agriculture, environmental monitoring, and autonomous driving research. These robots are designed to operate autonomously in diverse environments, collecting data and performing tasks that would otherwise be labor-intensive or hazardous for humans. This project focuses on developing a ``ROS-powered robotic`` vehicle designed for ``field exploration``. The vehicle is capable of traversing varied ground surfaces autonomously and can be used for tasks such as autonomous field mapping, agricultural plant monitoring, and testing autonomous driving algorithms.
