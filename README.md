@@ -186,9 +186,6 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 
 <img src="https://github.com/user-attachments/assets/86c5c324-89aa-4556-b372-714f7f6e5913" alt="System Design" width="1000" height="800"/>
-
-
-
 Figure 2: Control System Design 
 
 ### 1. Low-Level Control
