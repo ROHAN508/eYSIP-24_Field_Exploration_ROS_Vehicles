@@ -55,6 +55,33 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 - **Hardware:** ``Raspberry Pi5`` ,`` BMX 160 IMU`` , ``Ydlidar Tmini-Pro`` , ``Esp32`` , ``7V Lipo Battery`` 
 - **Software:**  ``Arduino IDE``, ``Python 3.12``
 
+## Remote Desktop Setup 
+1. **Install ROS2 Jazzy**
+   After installing run this command once ,
+   ```bash 
+   source /opt/ros/humble/setup.bash
+   echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+   source ~/.bashrc
+
+   ```
+2. **Create a workspace and clone the repository**
+
+   ```bash
+   mkdir -p ~/ros2_ws/src      # Create a workspace , builld and source it 
+   cd ~/ros2_ws
+   colcon build
+   source install/local_setup.bash
+
+   cd /pi_ws/src      # To clone the repo inside src folder 
+   git clone https://github.com/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles.git
+
+   ```
+   To avoid sourcing everytime you open a new terminal instance run this once ,
+   ```bash
+   echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
+   source ~/.bashrc      # source bashrc as we have made changes
+   ```
+
 ## Interfacing Hardware 
 
 ### Raspberry Pi 5 
@@ -75,6 +102,11 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
    cd ~/pi_ws
    colcon build
    source install/local_setup.bash
+2. **Clone the repository**
+   ```bash
+   cd /pi_ws/src
+   git clone https://github.com/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles.git
+   ```
 - **USB serial Permissions** 
 **Add ``dialout``to ``groups``**
 
