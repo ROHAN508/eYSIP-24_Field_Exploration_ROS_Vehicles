@@ -275,8 +275,7 @@ Achieving complete low-level control of the car through keyboard commands using 
     ```bash
     ros2 run teleop_bot sub
     ```
-3. **Run Publisher Node** 
-   On Pi 
+3. **Run Publisher Node On Pi** 
    ```bash
    ros2 run teleop_bot pub
    ```
