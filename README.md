@@ -267,7 +267,7 @@ Achieving complete low-level control of the car through keyboard commands using 
 
 1. **SSH into Raspberry Pi:**
    ```bash
-   ssh arms@192.168.0.171    # change the IP address accordingly 
+   ssh arms@192.168.0.171    # Change the IP address and Pi name  accordingly 
    ```
 2. **Run Subscriber Node**
     ```bash
@@ -287,7 +287,7 @@ Now u can control the car using ``WASD``keys for movement :
 - ``D`` - Turn Right
 - ``H``  - Halt
 
-- ``Note``: The``throttle`` value has been kept constant for the time being, you can change the value in the subscriber script in the ``teleop_bot`` package 
+- ``Note``: The``throttle`` value has been kept constant for the time being, you can change the value in the subscriber script in the ``teleop_bot`` package. Also, try running the car at ``25-50 PWM`` range for safe teleoperation
 
 
 ## Localization and Odometry
