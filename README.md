@@ -146,7 +146,6 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 
 ## ROS2-Teleoperation
-### Methodologies
 - Achieved complete low-level control of the car through keyboard commands using ROS2 for communication over a shared network.
 - Implement teleoperation nodes in ROS 2 to send commands to the robot.
 
@@ -157,15 +156,12 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 4. Test the teleoperation setup to ensure reliable and responsive control.
 
 ## Localization and Odometry
-### Methodologies
 - **Modified Kalman Filter:** Fused car velocity data (calculated from Vicon) with IMU accelerometer readings to get a more accurate state estimate (position and velocity) by reducing drift.
 
 ## Motion Planning
-### Methodologies
 - **Optimized Pure Pursuit Algorithm:** Implemented an optimized version of this path-tracking algorithm to ensure appropriate steering angles using the lookahead distance concept.
 
 ## SLAM
-### Methodologies
 - **SLAM:** Mapped the environment using LiDAR scan data and fused it with odometry data. This, along with the Adaptive Monte Carlo Localization (AMCL) algorithm, provided an accurate pose (position and orientation) estimate of the car within the map.
 
 **Figure 3:** Prototype Vehicle
