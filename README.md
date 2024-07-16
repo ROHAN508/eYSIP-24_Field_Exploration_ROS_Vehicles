@@ -15,7 +15,7 @@
 4. [Setup](#setup)
     - [Prerequisites](#prerequisites)
     - [Interfacing Hardware ](#interfacing-hardware)
-         - [Raspberry Pi5](#raspberry-pi5)
+         - [Raspberry Pi 5](#raspberry-pi-5)
          - [BMX 160 IMU ](#bmx-160-imu)
          - [Ydlidar Tmini-Pro](#ydlidar-tmini-pro)
 5. [Key Challenges](#key-challenges)
