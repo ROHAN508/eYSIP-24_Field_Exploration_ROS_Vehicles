@@ -70,7 +70,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
    cd ~/pi_ws
    colcon build
    source install/local_setup.bash
-#### USB serial Permissions 
+- **USB serial Permissions** 
 **Add ``dialout``to ``groups``**
 
 ```bash
