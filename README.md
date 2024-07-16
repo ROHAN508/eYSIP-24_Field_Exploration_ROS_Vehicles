@@ -144,6 +144,75 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
   **Figure 1:** Prototype Vehicle
 
+## Control System Design 
+
+![eysip2 drawio](https://github.com/user-attachments/assets/86c5c324-89aa-4556-b372-714f7f6e5913)
+
+Figure 2 : Control System Design 
+
+### 1. Low-Level Control
+
+- **ESP32**:
+  - **Role**: Acts as the intermediary between the motor drivers and the Raspberry Pi 5.
+  - **Communication**: Receives angle and PWM values via UART Serial from the Raspberry Pi 5.
+  - **Outputs**: Sends control signals to the motor drivers.
+
+- **Motor Drivers**:
+  - **Role**: Control the steering and throttle motors based on signals received from the ESP32.
+
+- **Servo Motor (Steering)**:
+  - **Role**: Adjusts the steering angle of the vehicle.
+  - **Control**: Receives signals from the motor driver.
+
+- **DC Motor (Throttle)**:
+  - **Role**: Controls the throttle of the vehicle.
+  - **Control**: Receives signals from the motor driver.
+
+### 2. Onboard Raspberry Pi 5
+
+- **Operating System**: Ubuntu 24LTS
+- **Optimized Pure Pursuit Algorithm**:
+  - **Role**: Calculates the desired angle for steering based on the current position and the goal.
+  - **Output**: Angle and PWM values sent to the ESP32 for motor control.
+
+- **BMX160 IMU**:
+  - **Role**: Provides IMU data for odometry.
+  - **Connection**: Connected via GPIO.
+  - **Data Published**: `/imu_data` topic.
+
+- **YDLidar Tmini Pro**:
+  - **Role**: Provides LiDAR data for SLAM.
+  - **Connection**: Connected via USB.
+  - **Data Published**: `/scan` topic.
+
+- **Odometry (Modified Kalman Filter)**:
+  - **Role**: Processes IMU and other sensor data to provide an accurate estimate of the vehicle’s position and velocity.
+  - **Output**: Publishes odometry data to the `/odom` topic.
+
+### 3. Remote PC
+
+- **Operating System**: ROS2 Jazzy
+- **SLAM (Simultaneous Localization and Mapping)**:
+  - **Components**: EKF (Extended Kalman Filter) and AMCL (Adaptive Monte Carlo Localization).
+  - **Role**: Utilizes LiDAR and odometry data to build and update a map of the environment.
+  - **Inputs**: Receives `/scan` and `/odom` topics.
+
+- **Navigation Stack (Nav2)**:
+  - **Role**: Handles path planning and navigation.
+  - **Inputs**: Receives odometry data and processed map information.
+  - **Outputs**: Publishes path data to the `/plan` topic.
+
+- **Goal Node**:
+  - **Role**: Defines the navigation goals for the vehicle.
+  - **Output**: Publishes goal positions to the `/goal_topic`.
+
+### Summary
+
+- The **Low-Level Control** segment, managed by the ESP32, translates commands from the Raspberry Pi into physical movements of the vehicle.
+- The **Onboard Raspberry Pi 5** is the central processing unit for sensor data collection and preliminary processing (IMU, LiDAR), and it runs the Pure Pursuit algorithm for immediate steering adjustments.
+- The **Remote PC** is responsible for advanced processing tasks, including SLAM for mapping and localization, and the Nav2 stack for path planning and navigation, ensuring the vehicle reaches its defined goals efficiently.
+
+
 
 
 ## ROS2-Teleoperation
