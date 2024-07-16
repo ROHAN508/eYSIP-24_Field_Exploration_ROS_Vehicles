@@ -59,7 +59,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 2. **Flash the SD Card:** 
    Use tools like ``Balena Etcher``/``Rpi Imager`` to flash the Ubuntu image to a ``32GB`` or ``64GB`` SD card.
 
-#### Install ROS 2 Jazzy
+- **Install ROS 2 Jazzy**
 1. **Follow the ROS 2 Installation Guide:** 
    Official ROS 2 Jazzy installation instructions can be found [here](https://docs.ros.org/en/ros2/Installation.html).
 
