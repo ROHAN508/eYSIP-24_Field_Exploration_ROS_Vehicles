@@ -11,8 +11,6 @@
 1. [Introduction](#introduction)
 2. [Project Goal](#project-goal)
 3. [Tech Stack](#tech-stack)
-
-
 4. [Setup](#setup)
     - [Prerequisites](#prerequisites)
     - [Remote Desktop Setup](#remote-desktop-setup)
