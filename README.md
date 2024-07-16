@@ -25,6 +25,7 @@
 9. [Localization and Odometry](#localization-and-odometry)
 10. [Motion Planning](#motion-planning)
 11. [SLAM](#slam)
+12. [Future Developement](#future-development)
 
 ## Introduction
 Field exploration robots have gained significant attention in recent years due to their potential applications in various domains such as agriculture, environmental monitoring, and autonomous driving research. These robots are designed to operate autonomously in diverse environments, collecting data and performing tasks that would otherwise be labor-intensive or hazardous for humans. This project focuses on developing a ``ROS-powered robotic`` vehicle designed for ``field exploration``. The vehicle is capable of traversing varied ground surfaces autonomously and can be used for tasks such as autonomous field mapping, agricultural plant monitoring, and testing autonomous driving algorithms.
@@ -300,4 +301,4 @@ Now u can control the car using ``WASD``keys for movement :
 ## SLAM
 - **SLAM:** Mapped the environment using LiDAR scan data and fused it with odometry data. This, along with the Adaptive Monte Carlo Localization (AMCL) algorithm, provided an accurate pose (position and orientation) estimate of the car within the map.
 
-**Figure 3:** Prototype Vehicle
+## Future Development
