@@ -1,6 +1,7 @@
 # Advancing Field Exploration Using ROS-powered Robotic Vehicles 
 ## ARMS Lab, Systems and Control engineering department IIT Bombay & e-Yantra
 ![download-removebg-preview](https://github.com/user-attachments/assets/1f34676f-148d-4278-898e-5757917b775c)
+![logo](https://github.com/user-attachments/assets/728cd6f2-2ba5-4a79-9b8e-a3cf8086c92e)
 
 
 
@@ -15,6 +16,7 @@
 1. [Introduction](#introduction)
 2. [Project Goal](#project-goal)
 3. [Tech Stack](#tech-stack)
+
 4. [Setup](#setup)
     - [Prerequisites](#prerequisites)
     - [Remote Desktop Setup](#remote-desktop-setup)
