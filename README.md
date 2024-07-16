@@ -59,14 +59,14 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 ## Remote Desktop Setup 
 1. **Install ROS2 Jazzy:**
 
-After installing run this command once 
+   After installing run this command once 
    ```bash 
    source /opt/ros/humble/setup.bash
    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
    source ~/.bashrc
 
    ```
-3. **Create a workspace and clone the repository**
+2. **Create a workspace and clone the repository**
 
    ```bash
    mkdir -p ~/ros2_ws/src      # Create a workspace , builld and source it 
