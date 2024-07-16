@@ -52,16 +52,16 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 ## Interfacing Hardware 
 
-``### Raspberry Pi 5 ``
+### Raspberry Pi 5 
 #### Flash SD Card
 1. **Download Ubuntu 24:** 
-   Download the Ubuntu 24 image for Raspberry Pi from the official Ubuntu website.
+   Download the ``Ubuntu 24`` image for Raspberry Pi from the official Ubuntu website.
 2. **Flash the SD Card:** 
-   Use tools like Balena Etcher/Rpi Imager to flash the Ubuntu image to a 32GB or 64GB SD card.
+   Use tools like ``Balena Etcher``/``Rpi Imager`` to flash the Ubuntu image to a ``32GB`` or ``64GB`` SD card.
 
-#### Install ROS 2 Jozzy
+#### Install ROS 2 Jazzy
 1. **Follow the ROS 2 Installation Guide:** 
-   Official ROS 2 Jozzy installation instructions can be found [here](https://docs.ros.org/en/ros2/Installation.html).
+   Official ROS 2 Jazzy installation instructions can be found [here](https://docs.ros.org/en/ros2/Installation.html).
 
 #### Workspace Setup
 1. **Create ROS 2 Workspace:**
@@ -69,7 +69,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
    mkdir -p ~/pi_ws/src
    cd ~/pi_ws
    colcon build
-   source install/local_setup.bas
+   source install/local_setup.bash
 - **BMX 160 IMU** :
 - **Ydlidar Tmini-Pro** :
 
