@@ -69,7 +69,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
    ```bash
    mkdir -p ~/ros2_ws/src      # Create a workspace , builld and source it 
    cd ~/ros2_ws
-   colcon build
+   colcon build --symlink install
    source install/local_setup.bash
 
    cd /pi_ws/src      # To clone the repo inside src folder 
@@ -100,7 +100,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
    ```bash
    mkdir -p ~/pi_ws/src
    cd ~/pi_ws
-   colcon build
+   colcon build --symlink install
    source install/local_setup.bash
    
    echo "source ~/pi_ws/install/setup.bash" >> ~/.bashrc
