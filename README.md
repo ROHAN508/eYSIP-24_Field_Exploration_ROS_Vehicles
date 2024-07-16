@@ -71,26 +71,27 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
    colcon build
    source install/local_setup.bash
 #### USB serial Permissions 
-1. ** Add ``dialout``to ``groups``
+**Add ``dialout``to ``groups``**
     ```bash
     sudo usermod -aG dialout $USER
 
 ### BMX 160 IMU
 #### Dependencies
-1. **Install smbus :**
+ **Install smbus :**
    ```bash
    sudo apt update
    sudo apt install python3-smbus
+   ```
 #### IMU node
-2. **Launch IMU node:**
+**Launch IMU node:**
    ```bash
    ros2 launch imu_pkg imu_rviz_robot.launch.py
-
+   ```
 #### Logging Data    
-4. **Check IMU data:**
+**Check IMU data:**
    ```bash
    ros2 topic echo /imu_raw
-
+   ```
 ### Ydlidar Tmini-Pro
 ### Connect and Launch the Lidar driver 
 1. **Ensure the YDLidar is connected to a USB port and powered on**
@@ -98,6 +99,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 2. **Launch the YDLidar node with the following command:**
    ```bash
    ros2 launch ydlidar_ros2_driver ydlidar_launch.py
+   ```
 3. **Visualize Lidar scan data:**
    ```bash
    ros2 launch rcar_viz display.launch.py
