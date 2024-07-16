@@ -53,7 +53,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 ## Interfacing Hardware 
 
 ### Raspberry Pi 5 
-#### Flash SD Card
+- **Flash SD Card**
 1. **Download Ubuntu 24:** 
    Download the ``Ubuntu 24`` image for Raspberry Pi from the official Ubuntu website.
 2. **Flash the SD Card:** 
