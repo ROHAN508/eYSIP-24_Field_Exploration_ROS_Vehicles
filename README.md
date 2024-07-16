@@ -157,57 +157,57 @@ Figure 2: Control System Design
 
 - **ESP32**:
   - **Role**: Acts as the intermediary between the motor drivers and the Raspberry Pi 5.
-  - **Communication**: Receives angle and PWM values via UART Serial from the Raspberry Pi 5.
+  - **Communication**: Receives ``angle`` and ``PWM``values via ``UART Serial`` from the Raspberry Pi 5.
   - **Outputs**: Sends control signals to the motor drivers.
 
 - **Motor Drivers**:
   - **Role**: Control the steering and throttle motors based on signals received from the ESP32.
 
 - **Servo Motor (Steering)**:
-  - **Role**: Adjusts the steering angle of the vehicle.
+  - **Role**: Adjusts the ``steering angle`` of the vehicle.
   - **Control**: Receives signals from the motor driver.
 
 - **DC Motor (Throttle)**:
-  - **Role**: Controls the throttle of the vehicle.
+  - **Role**: Controls the ``throttle`` of the vehicle.
   - **Control**: Receives signals from the motor driver.
 
 ### 2. Onboard Raspberry Pi 5
 
 - **Operating System**: Ubuntu 24LTS
 - **Optimized Pure Pursuit Algorithm**:
-  - **Role**: Calculates the desired angle for steering based on the current position and the goal.
+  - **Role**: Calculates the desired ``angle`` for steering based on the current ``position`` and the ``goal``.
   - **Output**: Angle and PWM values sent to the ESP32 for motor control.
 
 - **BMX160 IMU**:
   - **Role**: Provides IMU data for odometry.
-  - **Connection**: Connected via GPIO.
+  - **Connection**: Connected via ``GPIO`` pins on Rasbperry Pi 5.
   - **Data Published**: `/imu_data` topic.
 
 - **YDLidar Tmini Pro**:
-  - **Role**: Provides LiDAR data for SLAM.
-  - **Connection**: Connected via USB.
+  - **Role**: Provides ``LiDAR`` data for SLAM.
+  - **Connection**: Connected via ``USB``.
   - **Data Published**: `/scan` topic.
 
 - **Odometry (Modified Kalman Filter)**:
-  - **Role**: Processes IMU and other sensor data to provide an accurate estimate of the vehicle’s position and velocity.
+  - **Role**: Processes ``IMU`` and other ``Vicon`` car velocity (corresponding to PWM) data to provide an accurate estimate of the vehicle’s ``position`` and ``velocity``.
   - **Output**: Publishes odometry data to the `/odom` topic.
 
 ### 3. Remote PC
 
 - **Operating System**: ROS2 Jazzy
 - **SLAM (Simultaneous Localization and Mapping)**:
-  - **Components**: EKF (Extended Kalman Filter) and AMCL (Adaptive Monte Carlo Localization).
-  - **Role**: Utilizes LiDAR and odometry data to build and update a map of the environment.
+  - **Components**: ``EKF (Extended Kalman Filter)`` and ``AMCL (Adaptive Monte Carlo Localization)``.
+  - **Role**: Utilizes LiDAR and odometry data to build and update a ``map`` of the environment.
   - **Inputs**: Receives `/scan` and `/odom` topics.
 
 - **Navigation Stack (Nav2)**:
-  - **Role**: Handles path planning and navigation.
+  - **Role**: Handles ``path planning``and ``navigation``.
   - **Inputs**: Receives odometry data and processed map information.
   - **Outputs**: Publishes path data to the `/plan` topic.
 
 - **Goal Node**:
-  - **Role**: Defines the navigation goals for the vehicle.
-  - **Output**: Publishes goal positions to the `/goal_topic`.
+  - **Role**: Defines the navigation ``goals` for the vehicle.
+  - **Output**: Publishes ``waypoints`` to the `/goal_topic`.
 
 ### Summary
 
