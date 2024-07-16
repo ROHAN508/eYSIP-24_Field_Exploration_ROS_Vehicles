@@ -1,5 +1,7 @@
 # Advancing Field Exploration Using ROS-powered Robotic Vehicles 
-## ARMS Lab , Systems and Control engineering department IIT Bombay & e-Yantra IITB
+## ARMS Lab, Systems and Control engineering department IIT Bombay & e-Yantra
+![download-removebg-preview](https://github.com/user-attachments/assets/1f34676f-148d-4278-898e-5757917b775c)
+
 
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/TahsinOP/eYSIP-24_Field_Exploration_ROS_Vehicles)
