@@ -73,9 +73,9 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 - **USB serial Permissions** 
 **Add ``dialout``to ``groups``**
 
-```bash
+  ```bash
     sudo usermod -aG dialout $USER
-```
+   ```
 
 ### BMX 160 IMU
 #### Dependencies
