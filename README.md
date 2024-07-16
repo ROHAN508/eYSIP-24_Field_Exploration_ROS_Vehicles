@@ -278,14 +278,16 @@ Achieving complete low-level control of the car through keyboard commands using 
    ```bash
    ros2 run teleop_bot pub
    ```
-   If u have less computation on Pi run the publisher on the ``remote PC``using the same command stated above 
+   If u have less computation on Pi run the publisher on the ``remote PC`` using the same command stated above 
 
-Now u can control the bot using ``WASD ``keys for movement :
-- W - Move Forward
-- A - Turn Left
-- S - Move Backward
-- D - Turn Right
-- H  - Halt
+Now u can control the car using ``WASD``keys for movement :
+- ``W ``- Move Forward
+- ``A``- Turn Left
+- ``S`` - Move Backward
+- ``D`` - Turn Right
+- ``H``  - Halt
+
+- ``Note``: The``throttle`` value has been kept constant for the time being, you can change the value in the subscriber script in the ``teleop_bot`` package 
 
 
 ## Localization and Odometry
