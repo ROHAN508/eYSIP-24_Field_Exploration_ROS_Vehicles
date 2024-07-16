@@ -63,7 +63,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 1. **Follow the ROS 2 Installation Guide:** 
    Official ROS 2 Jazzy installation instructions can be found [here](https://docs.ros.org/en/ros2/Installation.html).
 
-#### Workspace Setup
+- **Workspace Setup**
 1. **Create ROS 2 Workspace:**
    ```bash
    mkdir -p ~/pi_ws/src
