@@ -15,7 +15,7 @@
 3. [Tech Stack](#tech-stack)
 4. [Setup](#setup)
     - [Prerequisites](#prerequisites)
-    - [Remote PC Setup](#remote-pc-setup)
+    - [Remote Desktop Setup](#remote-desktop-setup)
     - [Interfacing Hardware ](#interfacing-hardware)
          - [Raspberry Pi 5](#raspberry-pi-5)
          - [BMX 160 IMU ](#bmx-160-imu)
