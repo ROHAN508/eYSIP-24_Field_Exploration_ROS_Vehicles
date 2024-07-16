@@ -68,7 +68,7 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
   **Figure 1:** Prototype Vehicle
 
-### Key Challenges
+## Key Challenges
 - **Low-level Control:** The primary challenge we faced in low-level control was interfacing a custom servo with five pins for which no pin diagrams or references were available online. Achieving accurate control at this level required extensive experimentation and fine-tuning.
 - **Localization and Odometry:** For localization and odometry, we relied solely on an IMU to estimate the robot’s pose. The IMU’s orientation measurements exhibited significant drift over time. Additionally, the accelerometer’s bias was continuously affected by the robot’s suspension system.
 - **Motion Planning:** In motion planning, traditional control algorithms used for differential or omnidirectional drives were ineffective. This required the development of an approach tailored to the dynamics of an Ackermann steering system.
