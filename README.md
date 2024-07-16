@@ -43,16 +43,16 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 
 ## Setup
 
-### Prerequisites
+## Prerequisites
 
 - **Operating System:** ``Ubuntu 24 LTS`` noble or later
 - **ROS 2 Distribution:** ``Jazzy Jelisco`` 
 - **Hardware:** ``Raspberry Pi5`` ,`` BMX 160 IMU`` , ``Ydlidar Tmini-Pro`` , ``Esp32`` , ``7V Lipo Battery`` 
 - **Software:**  ``Arduino IDE``, ``Python 3.12``
 
-### Interfacing Hardware 
+## Interfacing Hardware 
 
-- **Setting Up Rpi5** :
+### Setting Up Rpi5 
 #### Flash SD Card
 1. **Download Ubuntu 24:** 
    Download the Ubuntu 24 image for Raspberry Pi from the official Ubuntu website.
