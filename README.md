@@ -101,13 +101,15 @@ The primary goal of this project is to develop a ROS2-enabled four-wheel-drive v
 3. **Visualize Lidar scan data:**
    ```bash
    ros2 launch rcar_viz display.launch.py
-This will launch Rviz2 with a robot model and fixed frame as ``"odom"``
+   ````
+   This will launch ``Rviz2`` with a robot model and ``fixed frame`` as ``"odom"``
 
 4. **Optional: Run IMU Pose Estimation:**
    To see the Odom data, you can run the following node (optional):
    ```bash
         ros2 run imu_pose_estimation estimator
-Alternatively, set the fixed frame to base_link in RViz to see laser data on the /scan topic.
+    ```
+    Alternatively, set the fixed frame to ``"base_link"`` in RViz to see laser data on the ``/scan``topic.
 
    
           
