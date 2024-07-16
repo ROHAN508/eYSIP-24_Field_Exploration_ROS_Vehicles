@@ -15,11 +15,12 @@
 4. [Setup](#setup)
     - [Prerequisites](#prerequisites)
     - [Interfacing Hardware ](#interfacing-hardware)
-5. [Hardware Development](#hardware-development)
-6. [ROS2-Teleoperation](#ros2-teleoperation)
-7. [Localization and Odometry](#localization-and-odometry)
-8. [Motion Planning](#motion-planning)
-9. [SLAM](#slam)
+5. [Key Challenges](#key-challenges)
+6. [Hardware Development](#hardware-development)
+7. [ROS2-Teleoperation](#ros2-teleoperation)
+8. [Localization and Odometry](#localization-and-odometry)
+9. [Motion Planning](#motion-planning)
+10. [SLAM](#slam)
 
 ## Introduction
 Field exploration robots have gained significant attention in recent years due to their potential applications in various domains such as agriculture, environmental monitoring, and autonomous driving research. These robots are designed to operate autonomously in diverse environments, collecting data and performing tasks that would otherwise be labor-intensive or hazardous for humans. This project focuses on developing a ``ROS-powered robotic`` vehicle designed for ``field exploration``. The vehicle is capable of traversing varied ground surfaces autonomously and can be used for tasks such as autonomous field mapping, agricultural plant monitoring, and testing autonomous driving algorithms.
