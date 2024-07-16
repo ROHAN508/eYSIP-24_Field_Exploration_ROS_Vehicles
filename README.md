@@ -254,14 +254,38 @@ Figure 2: Control System Design
 
 
 ## ROS2-Teleoperation
-- Achieved complete low-level control of the car through keyboard commands using ROS2 for communication over a shared network.
-- Implement teleoperation nodes in ROS 2 to send commands to the robot.
+
+Achieving complete low-level control of the car through keyboard commands using ROS2 for communication over a shared network is a significant milestone. This setup allows for real-time teleoperation, enabling users to control the car remotely using simple keyboard inputs. By implementing teleoperation nodes in ROS 2, commands can be sent to the robot, providing a responsive and reliable control system.
 
 **Implementation Steps:**
 1. Install necessary ROS 2 packages for teleoperation.
 2. Write a ROS 2 node to capture keyboard inputs and publish velocity commands.
 3. Configure the robot to subscribe to these velocity commands and actuate the motors accordingly.
 4. Test the teleoperation setup to ensure reliable and responsive control.
+
+**How to Run the Teleop Node:**
+
+1. **SSH into Raspberry Pi:**
+   ```bash
+   ssh arms@192.168.0.171
+   ```
+2. **Run Subscriber Node**
+    ```bash
+    ros2 run teleop_bot sub
+    ```
+3. **Run Publisher Node** 
+   On Pi 
+   ```bash
+   ros2 run teleop_bot pub
+   ```
+   If u have less computation on Pi run the publisher on the remote PC using the same command 
+   Now u can control the bot using WASD keys for movement
+   W - Move Forward
+   A - Turn Left
+   S - Move Backward
+   D - Turn Right
+   H  - Halt
+
 
 ## Localization and Odometry
 - **Modified Kalman Filter:** Fused car velocity data (calculated from Vicon) with IMU accelerometer readings to get a more accurate state estimate (position and velocity) by reducing drift.
