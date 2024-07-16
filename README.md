@@ -1,7 +1,7 @@
 # Advancing Field Exploration Using ROS-powered Robotic Vehicles 
 ## ARMS Lab, Systems and Control engineering department IIT Bombay & e-Yantra
 <img src="https://github.com/user-attachments/assets/728cd6f2-2ba5-4a79-9b8e-a3cf8086c92e" alt="yantra Logo" width="60" height="60"/>
-<img src="https://github.com/user-attachments/assets/10ac1832-bee4-4632-8201-f1da858b5f7c" alt="yantra Logo" width="100" height="60"/>
+<img src="https://github.com/user-attachments/assets/10ac1832-bee4-4632-8201-f1da858b5f7c" alt="yantra Logo" width="150" height="60"/>
 
 
 
