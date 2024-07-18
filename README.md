@@ -271,7 +271,7 @@ Achieving complete low-level control of the car through keyboard commands using 
    ```bash
    ssh arms@192.168.0.171    # Change the IP address and Pi name  accordingly 
    ```
-2. **Run Subscriber Node**
+2. **Run Subscriber Node On Pi/Remote PC**
     ```bash
     ros2 run teleop_bot sub
     ```
