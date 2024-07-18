@@ -243,7 +243,7 @@ Figure 2: Control System Design
   - **Outputs**: Publishes path data to the `/plan` topic.
 
 - **Goal Node**:
-  - **Role**: Defines the navigation ``goals` for the vehicle.
+  - **Role**: Defines the navigation ``goals`` for the vehicle.
   - **Output**: Publishes ``waypoints`` to the `/goal_topic`.
 
 ### Summary
