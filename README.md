@@ -337,13 +337,16 @@ This will give you the ``(x,y,yaw)`` data of the vehicle , and also publish data
 
 1. **Upgrading Hardware for Outdoor Use**: Enhance the hardware to
 function robustly in outdoor environments and incorporate GPS for improved outdoor localization.
+
 2. **Developing a Mission Planner Stack**: Create a mission planner stack
 capable of generating and updating paths for the vehicle based on environmental variables, enabling more dynamic and adaptive route planning.
+
 3. **Implementing State-of-art Algorithms**: Integrate deep learning
 and reinforcement learning-based algorithms to achieve more adaptive
 and robust navigation, enabling the vehicle to better handle diverse and unpredictable conditions. Upgrade the algorithms to better handle dynamic
 environments, both indoor and outdoor, as they are currently designed for
 static settings.
+
 4. **Enhanced Sensor Integration**: Incorporate additional sensors such as
 RGB-depth cameras, and ultrasonic sensors to improve environmental
 perception, and implement advanced algorithms such as ORB-SLAM.
