@@ -292,7 +292,19 @@ Now u can control the car using ``WASD`` keys for movement :
 
 
 ## Localization and Odometry
-- **Modified Kalman Filter:** Fused car velocity data (calculated from Vicon) with IMU accelerometer readings to get a more accurate state estimate (position and velocity) by reducing drift.
+- **Modified Kalman Filter:** Fused car velocity data (calculated from Vicon) with IMU accelerometer readings to get a more accurate state estimate (position and velocity) by reducing drift. The Kalman filter uses Vicon data as a reference and corrects the IMU readings accordingly giving accurate position data. For orientation, gyroscope  data was used to calculate roll, pitch, and yaw after bias removal. 
+
+**To run the odometry Node**
+1. **SSH into Raspberry Pi:**
+   ```bash
+   ssh arms@192.168.0.171    # Change the IP address and Pi name  accordingly 
+   ```
+2. **Run Odom Node On Pi**
+    ```bash
+    ros2 run localization imu_odometry
+
+    ```
+This will give you the ``(x,y,yaw)`` data of the vehicle , and also publish data on ``/odom`` topic 
 
 ## Motion Planning
 - **Optimized Pure Pursuit Algorithm:** Implemented an optimized version of this path-tracking algorithm to ensure appropriate steering angles using the lookahead distance concept.
