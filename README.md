@@ -324,6 +324,13 @@ This will give you the ``(x,y,yaw)`` data of the vehicle , and also publish data
     Hit enter on the goal node terminal after the pure-pursuit controller is started 
    
 ## SLAM
-- **SLAM:** Mapped the environment using LiDAR scan data and fused it with odometry data. This, along with the Adaptive Monte Carlo Localization (AMCL) algorithm, provided an accurate pose (position and orientation) estimate of the car within the map.
+- **SLAM:** Mapped the environment using LiDAR scan data and fused it with odometry data. This, along with the Adaptive Monte Carlo Localization (AMCL) algorithm, provided an accurate pose (position and orientation) estimate of the car within the map. Slam_toolbox is used for mapping the environment with proper loop closure, and the Nav2 stack is used to generate local and global cost maps, generate planned paths which are finally fed in the form of waypoints to the motion planning algorithm.
+
+1. **Map the environment using slam_toolbox ( Already done and saved in the maps folder)**
+2. **Launch the Odometery node using the steps given in the previous sections**
+3. **Launch the Navigation and Localization launch files**
+4. **Run the GoalNode and pure pursuit script**
+5. **Give a 2D goal pose in Nav2 Rviz**
+ 
 
 ## Future Development
