@@ -308,7 +308,6 @@ This will give you the ``(x,y,yaw)`` data of the vehicle , and also publish data
 
 ## Motion Planning
 - **Optimized Pure Pursuit Algorithm:** Implemented an optimized version of this path-tracking algorithm to ensure appropriate steering angles using the lookahead distance concept. The waypoints are provided to the vehicle by the ``Goal_Node``, which is fed into the pure-pursuit algorithm. The algorithm used Odometry data from the ``/Odom`` topic, calculates the linear and angular error and proceeds towards the waypoints effectively ( Note: The tuning parameter is ``lookahead_distance``)
-- 
 **Waypoint navigation**  
 1. **SSH into Raspberry Pi:**
    ```bash
