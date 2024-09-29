@@ -309,8 +309,7 @@ This will give you the ``(x,y,yaw)`` data of the vehicle , and also publish data
 ## Motion Planning
 - **Optimized Pure Pursuit Algorithm:** Implemented an optimized version of this path-tracking algorithm to ensure appropriate steering angles using the lookahead distance concept. The waypoints are provided to the vehicle by the ``Goal_Node``, which is fed into the pure-pursuit algorithm. The algorithm used Odometry data from the ``/Odom`` topic, calculates the linear and angular error and proceeds towards the waypoints effectively ( Note: The tuning parameter is ``lookahead_distance``)
 - 
-**Waypoint navigation**
-  
+**Waypoint navigation**  
 1. **SSH into Raspberry Pi:**
    ```bash
    ssh arms@192.168.0.171    # Change the IP address and Pi name  accordingly 
@@ -325,8 +324,6 @@ This will give you the ``(x,y,yaw)`` data of the vehicle , and also publish data
     ```
     Hit enter on the goal node terminal after the pure-pursuit controller is started 
    
-  
-
 ## SLAM
 - **SLAM:** Mapped the environment using LiDAR scan data and fused it with odometry data. This, along with the Adaptive Monte Carlo Localization (AMCL) algorithm, provided an accurate pose (position and orientation) estimate of the car within the map.
 
